@@ -1,11 +1,10 @@
-
 import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
-import { Phone, Mail, MapPin, Search, Plus, MessageCircle } from "lucide-react";
+import { Phone, Mail, MapPin, Search, Plus, MessageCircle, Contact } from "lucide-react";
 
 const contacts = [
   {

@@ -13,7 +13,7 @@ import {
   useSidebar,
 } from "@/components/ui/sidebar";
 import { 
-  Dashboard as DashboardIcon, 
+  LayoutDashboard, 
   Users, 
   Activity, 
   FileText, 
@@ -28,7 +28,7 @@ interface AppSidebarProps {
 }
 
 const menuItems = [
-  { id: "dashboard", title: "Dashboard", icon: DashboardIcon },
+  { id: "dashboard", title: "Dashboard", icon: LayoutDashboard },
   { id: "schools", title: "Schools", icon: Users },
   { id: "status", title: "Training Status", icon: Activity },
   { id: "implementation", title: "Implementation", icon: FileText },
@@ -38,10 +38,11 @@ const menuItems = [
 ];
 
 export function AppSidebar({ activeView, setActiveView }: AppSidebarProps) {
-  const { collapsed } = useSidebar();
+  const { state } = useSidebar();
+  const collapsed = state === "collapsed";
 
   return (
-    <Sidebar className={collapsed ? "w-14" : "w-64"} collapsible>
+    <Sidebar className={collapsed ? "w-14" : "w-64"} collapsible="icon">
       <SidebarContent className="bg-white border-r border-gray-200">
         <div className="p-4 border-b border-gray-200">
           <div className="flex items-center space-x-2">

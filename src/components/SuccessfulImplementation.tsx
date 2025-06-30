@@ -1,10 +1,9 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, LineChart, Line } from 'recharts';
-import { Trophy, Star, TrendingUp, Calendar, Users, Award, Download, Share } from "lucide-react";
+import { Trophy, Star, TrendingUp, Calendar, Users, Award, Download, Share, Clock, CheckCircle } from "lucide-react";
 
 const successStories = [
   {
